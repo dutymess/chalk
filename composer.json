@@ -1,0 +1,27 @@
+{
+    "name": "dutymess/chalk",
+    "description": "Easy tracepoint generator at the middle of procedures where creating breakpoints is not that easy.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taha Kamkar",
+            "email": "chieftaha@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "src/helperqweqwes.php"
+        ]
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dutymess\\Chalk\\ChalkServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
