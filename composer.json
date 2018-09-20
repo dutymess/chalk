@@ -12,9 +12,6 @@
     "keywords": ["Laravel","Chalk","Cache","Debug", "dutymess"],
     "minimum-stability": "dev",
     "autoload": {
-        "files": [
-            "src/helperqweqwes.php"
-        ]
     },
 
     "extra": {
