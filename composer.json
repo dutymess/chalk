@@ -6,15 +6,15 @@
     "authors": [
         {
             "name": "Taha Kamkar",
-            "email": "chieftaha@gmail.com"
+            "email": "github.taha@gmail.com"
         }
     ],
     "keywords": ["Laravel","Chalk","Cache","Debug", "dutymess"],
     "minimum-stability": "dev",
     "autoload": {
-        "files": [
-            "src/helperqweqwes.php"
-        ]
+        "psr-4": {
+            "Dutymess\\Chalk\\": "src"
+        }
     },
 
     "extra": {
@@ -26,7 +26,7 @@
     },
     "require": {
         "php": ">=7.0",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": ">=5.5",
         "nesbot/carbon": "^1.21"
     }
 }

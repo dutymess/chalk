@@ -6,9 +6,11 @@ Sometimes it's not very easy to use `dd()` or similar ways to see what's going o
 
 `Chalk` will utilize Laravel caching tools to make this work like a breeze. 
 
-## Setup
+## Install
 
-:exclamation: To be Added :exclamation:
+```bash
+composer require dutymess/chalk
+```
 
 ## Simple Usage
 
