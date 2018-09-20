@@ -87,6 +87,23 @@ class Chalk
 
 
     /**
+     * write on the chalk stack
+     *
+     * @deprecated
+     *
+     * @param mixed $thing
+     * @param mixed $details
+     *
+     * @return array
+     */
+    public function add($thing, $details = null)
+    {
+        return $this->write($thing, $details);
+    }
+
+
+
+    /**
      * clear the chalk stack
      *
      * @return array
