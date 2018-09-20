@@ -1,3 +1,13 @@
+[![Packagist Downloads](https://poser.pugx.org/dutymess/chalk/downloads)](https://packagist.org/packages/dutymess/chalk)
+[![Github All Releases](https://img.shields.io/github/downloads/dutymess/chalk/total.svg)](https://github.com/dutymess/chalk) 
+[![Semver](https://img.shields.io/github/release/dutymess/chalk.svg)](http://semver.org/spec/v2.0.0.html)
+![license](https://img.shields.io/github/license/dutymess/chalk.svg)
+
+
+[![Forks](https://img.shields.io/github/forks/dutymess/chalk.svg?style=social&logo=github&label=Fork)](https://github.com/dutymess/chalk/network)
+[![Forks](https://img.shields.io/github/stars/dutymess/chalk.svg?style=social&logo=github&label=Stars)](https://github.com/peyman3d/koochak/stargazers)
+
+
 ## Introduction
 
 Sometimes you need to have tracepoints inside your procedures, without breaking it with dumping some data. 
@@ -87,4 +97,6 @@ However, you may override this default behavior by setting a custom timeout.
 chalk()::setTimeout($minutes);
 ```
 
-### 
+## License
+`Chalk` is open-sourced and licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
