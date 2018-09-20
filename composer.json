@@ -12,6 +12,9 @@
     "keywords": ["Laravel","Chalk","Cache","Debug", "dutymess"],
     "minimum-stability": "dev",
     "autoload": {
+        "psr-4": {
+            "Dutymess\\Chalk\\": "src"
+        }
     },
 
     "extra": {
