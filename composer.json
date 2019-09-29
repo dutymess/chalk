@@ -27,6 +27,6 @@
     "require": {
         "php": ">=7.0",
         "laravel/framework": ">=5.5",
-        "nesbot/carbon": "^1.21"
+        "nesbot/carbon": ">=1.21"
     }
 }
