@@ -2,18 +2,19 @@
 
 namespace Dutymess\Chalk;
 
-
 use Carbon\Carbon;
 
 class Chalk
 {
     const CACHE_KEY = "CHALK";
+
     /**
-     * keep the expiry time of the catches
+     * keep the expiry time of the catches (in minutes for Laravel <=5.7; in seconds for later versions.)
      *
      * @var int
      */
     protected static $expiry_time = 10;
+
     /**
      * keep the stack name in which the records are kept under
      *
@@ -185,8 +186,13 @@ class Chalk
      */
     private function setChalkCache($data = [])
     {
+        $expires = static::$expiry_time;
+        if (floatval(app()::VERSION) > 5.7) {
+            $expires *= 60;
+        }
+
         if ($this->shouldWork()) {
-            cache()->put(static::CACHE_KEY, $data, static::$expiry_time);
+            cache()->put(static::CACHE_KEY, $data, $expires);
         }
     }
 
